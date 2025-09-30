@@ -33,7 +33,7 @@ Para la implementación se utilizó `collections.deque`, que está optimizada pa
 
 ### Métodos implementados:
 
-- `enqueue(val)`: Agrega un elemento al final de la cola. Utiliza el método `append()`, el cual en un deque es O(1) garantizado, ya que la estructura está optimizada para operaciones en ambos extremos.
+- `enqueue(val)`: Agrega un elemento al final de la cola. Utiliza el método append(), el cual en un deque es O(1) garantizado, ya que la estructura está optimizada para operaciones en ambos extremos.
 - `dequeue()`: Elimina el primer elemento de la cola. Se implementa con popleft(), que también es O(1) porque en lugar de desplazar todos los elementos como haría list.pop(0), simplemente mueve el puntero de inicio al siguiente elemento.
 - `front()`: Devuelve el primer elemento sin eliminarlo. Esta operación es O(1) porque el deque mantiene un puntero al inicio, lo que permite acceder directamente al primer elemento.
 - `empty()`: Devuelve True si la cola está vacía, de lo contrario False. Internamente revisa la variable size. En Python esto se implementa con la función len(), que devuelve en O(1) la longitud sin recorrer la estructura.
