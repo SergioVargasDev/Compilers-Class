@@ -10,11 +10,20 @@
 
 ### Pruebas realizadas:
 
-- Se agregaron los números 1, 2, 3, 4.
-- Se eliminaron dos elementos.
-- Se verificó si la pila está vacía.
-- Se consultó el elemento del tope.
-- Se imprimió el tamaño actual de la pila.
+- Se inicializó la pila: [].
+  Se agregaron los números:
+  push(1) → [1]
+  push(2) → [1, 2]
+  push(3) → [1, 2, 3]
+  push(4) → [1, 2, 3, 4]
+
+- Se eliminaron dos elementos:
+  pop() → [1, 2, 3]
+  pop() → [1, 2]
+
+- Se verificó si la pila está vacía: False.
+
+- Se consultó el elemento del tope: 2.
 
 ---
 
@@ -32,11 +41,23 @@ Para la implementación se utilizó `collections.deque`, que está optimizada pa
 
 ### Pruebas realizadas:
 
-- Se agregaron los números 1, 2, 3, 4.
-- Se eliminaron dos elementos.
-- Se verificó si la cola estaba vacía.
-- Se consultó el elemento del frente.
-- Se imprimió el tamaño actual de la cola.
+- Se inicializó la cola: [].
+
+-Se agregaron los números:
+enqueue(1) → [1]
+enqueue(2) → [1, 2]
+enqueue(3) → [1, 2, 3]
+enqueue(4) → [1, 2, 3, 4]
+
+- Se eliminaron dos elementos:
+  dequeue() → [2, 3, 4]
+  dequeue() → [3, 4]
+
+- Se verificó si la cola está vacía: False.
+
+- Se consultó el elemento del frente: 3.
+
+- Se imprimió el tamaño actual: 2.
 
 ---
 
@@ -60,11 +81,26 @@ Un HashMap almacena información en forma de pares clave → valor. En Python, e
 
 ### Pruebas realizadas:
 
-- Se insertaron las claves "name", "age" y "city".
-- Se accedió a los valores de "name", "age" y "city".
-- Se actualizó "age" de 21 a 22.
-- Se eliminó la clave "city".
-- Se verificó la existencia de "name" y "city".
-- Se imprimió el tamaño actual del HashMap.
+- Se inicializó el diccionario: {}.
+
+- Se insertaron las claves y valores:
+  "name": "Sergio" → {"name": "Sergio"}
+  "age": 21 → {"name": "Sergio", "age": 21}
+  "city": "Monterrey" → {"name": "Sergio", "age": 21, "city": "Monterrey"}
+
+- Se accedió a los valores:
+  "name" → "Sergio"
+  "age" → 21
+  "city" → "Monterrey"
+
+- Se actualizó "age" de 21 a 22 → {"name": "Sergio", "age": 22, "city": "Monterrey"}
+
+- Se eliminó la clave "city" → {"name": "Sergio", "age": 22}
+
+- Se verificó la existencia de claves:
+  "name" in hashMap → True
+  "city" in hashMap → False
+
+- Se imprimió el tamaño actual: 2.
 
 ---
